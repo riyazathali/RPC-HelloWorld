@@ -90,6 +90,22 @@ to save.
 ```text
 make -f Makefile.hw
 ```
+You will see the following files when you are listing down by ls command.
+```text
+	Makefile.hw
+	hw.h
+	hw.x
+	hw_client
+	hw_client.c
+	hw_client.o
+	hw_clnt.c
+	hw_clnt.o
+	hw_server
+	hw_server.c
+	hw_server.o
+	hw_svc.c
+	hw_svc.o
+  ```
 
 14. Use the following commands by opening up two terminals with same rpc dirctory and run the server in a one and client in the other.
 ```text
