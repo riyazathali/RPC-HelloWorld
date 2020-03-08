@@ -69,6 +69,7 @@ ls
 Makefile.hw  hw.h  hw.x  hw_client.c  hw_clnt.c  hw_server.c  hw_svc.c
 
 11. Replace the hw_client.c with the code in the hw_client.c which is in the git repo.
+```text
 sudo vim hw_client.c
 press
 esc
@@ -80,12 +81,15 @@ press esc
 press colon
 and type 
 wq! 
+```
 to save.
 
 12. Do the same for hw_server.c by replacing the existing code with the code in the hw_server.c which is in the git repo.
 
 13. Type the following Since we have changed those two files now we have to compile all the files again. It will generate all the object files with executables.
+```text
 make -f Makefile.hw
+```
 
 14. Use the following commands by opening up two terminals with same rpc dirctory and run the server in a one and client in the other.
 ```text
@@ -96,12 +100,16 @@ sudo ./hw_server
 sudo ./hw_client localhost
 ``` 
 You will see the following in the client side.
-
+```text
 Getting ready to call hello world
 Back from hello world
 Returning the string as below
 Hello world!! I am Ali
+``` 
 
 At the same time you will see the following in the server side.
-
+```text
+getting ready to return value to the client side
+Returning to the client...
+``` 
 
